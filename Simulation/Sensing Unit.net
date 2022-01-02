@@ -1,0 +1,41 @@
+* D:\GITHUB\EE313-Term-project\Simulation\Sensing Unit.asc
+XU5 N011 N005 12V -12V N006 LM741/NS
+V1 LM35 0 SINE(0.3 0.3 10)
+V2 12V 0 12V
+R1 5V N008 4500
+R2 N009 0 220
+R3 N006 N005 25k
+R4 N005 N007 1k
+R5 N011 LM35 1k
+R6 N011 0 25k
+XU1 N009 N007 12V -12V N007 LM741/NS
+V3 -12V 0 -12V
+V4 5V 0 5V
+D1 N006 N010 D
+XU2 N010 Vout 12V -12V Vout LM741/NS
+R7 N008 N009 350
+R8 N010 0 100k
+.model D D
+.lib C:\Users\erdem\Documents\LTspiceXVII\lib\cmp\standard.dio
+.include D:\GITHUB\EE313-Term-project\Simulation\LM741.MOD
+.tran 0 1 0
+* X1
+* X2
+* X3
+* X4
+* X3
+* X4
+* Vd
+* Vdd
+* Vout = { [ LM35 - ( (X2/ (X0+X1+X2) )*Vdd )  ]* (X3/X4)  } - Vd
+* LM35: analog voltage output of LM35 temperature sensor
+* Vdd: Voltage output of 5V linear voltage source
+* Vd: voltage drop of diode
+* X0
+* Vout is zero if Voltage of LM35 is smaller \nthan voltage output of this section
+* Substraction\nNote that voltage output of this section is always positive
+* Voltage Follower
+* POTENTIOMETER-500Ohm
+* SET POTENTIOMETER SUCH THAT WHEN LM35 IS 0.24V, Vout BECOMES ZERO VOLT
+.backanno
+.end
