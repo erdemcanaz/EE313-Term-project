@@ -84,7 +84,7 @@ L Device:R R1
 U 1 1 61E3B643
 P 1400 1600
 F 0 "R1" H 1470 1646 50  0000 L CNN
-F 1 "5k" H 1470 1555 50  0000 L CNN
+F 1 "3k" H 1470 1555 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 1330 1600 50  0001 C CNN
 F 3 "~" H 1400 1600 50  0001 C CNN
 	1    1400 1600
@@ -95,7 +95,7 @@ L Device:R R2
 U 1 1 61E3BDA3
 P 1400 2100
 F 0 "R2" H 1470 2146 50  0000 L CNN
-F 1 "10k" H 1470 2055 50  0000 L CNN
+F 1 "50k" H 1470 2055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 1330 2100 50  0001 C CNN
 F 3 "~" H 1400 2100 50  0001 C CNN
 	1    1400 2100
@@ -116,12 +116,12 @@ $Comp
 L Device:R_POT RV1
 U 1 1 61E42809
 P 1400 2650
-F 0 "RV1" H 1330 2696 50  0000 R CNN
-F 1 "1k" H 1330 2605 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 1400 2650 50  0001 C CNN
+F 0 "RV1" H 1330 2604 50  0000 R CNN
+F 1 "5k" H 1330 2695 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 1400 2650 50  0001 C CNN
 F 3 "~" H 1400 2650 50  0001 C CNN
 	1    1400 2650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Text GLabel 1400 3000 3    50   Input ~ 0
 GND
@@ -149,8 +149,6 @@ Text GLabel 1400 1350 1    50   Input ~ 0
 12V
 Wire Wire Line
 	1400 1450 1400 1350
-Wire Wire Line
-	1550 2650 2000 2650
 Text GLabel 2600 1250 0    50   Input ~ 0
 12V
 Text GLabel 3400 1250 2    50   Input ~ 0
@@ -401,22 +399,6 @@ F 3 "~" H 8050 750 50  0001 C CNN
 	1    8050 750 
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J3
-U 1 1 61EA9C33
-P 10200 700
-F 0 "J3" V 10262 744 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 10353 744 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 10200 700 50  0001 C CNN
-F 3 "~" H 10200 700 50  0001 C CNN
-	1    10200 700 
-	0    1    1    0   
-$EndComp
-Text GLabel 10200 1150 3    50   Input ~ 0
-Vout
-Wire Wire Line
-	10200 900  10100 900 
-Connection ~ 10200 900 
 Text GLabel 6850 1100 3    50   Input ~ 0
 12V
 Wire Wire Line
@@ -507,29 +489,6 @@ F 3 "~" H 9100 750 50  0001 C CNN
 	1    9100 750 
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 61ED4FBB
-P 11100 700
-F 0 "J5" V 11162 744 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 11253 744 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11100 700 50  0001 C CNN
-F 3 "~" H 11100 700 50  0001 C CNN
-	1    11100 700 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11100 900  11100 1050
-Wire Wire Line
-	11100 900  11000 900 
-Connection ~ 11100 900 
-Wire Wire Line
-	10200 900  10200 1050
-Wire Wire Line
-	10200 1050 11100 1050
-Wire Wire Line
-	10200 1150 10200 1050
-Connection ~ 10200 1050
 Wire Wire Line
 	7950 950  7950 1100
 Wire Wire Line
@@ -557,4 +516,59 @@ Wire Wire Line
 Connection ~ 7950 1100
 Wire Wire Line
 	7950 1100 7950 1250
+Wire Wire Line
+	1250 2650 1150 2650
+Wire Wire Line
+	1150 2650 1150 2450
+Wire Wire Line
+	1150 2450 1800 2450
+Wire Wire Line
+	1800 2450 1800 2650
+Wire Wire Line
+	1800 2650 2000 2650
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 61F733D9
+P 10100 700
+F 0 "J3" V 10162 844 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 10253 844 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 10100 700 50  0001 C CNN
+F 3 "~" H 10100 700 50  0001 C CNN
+	1    10100 700 
+	0    1    1    0   
+$EndComp
+Text GLabel 10600 1100 3    50   Input ~ 0
+Vout
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 61F807FB
+P 11200 700
+F 0 "J5" V 11262 844 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 11353 844 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11200 700 50  0001 C CNN
+F 3 "~" H 11200 700 50  0001 C CNN
+	1    11200 700 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 900  10100 900 
+Wire Wire Line
+	10200 900  10100 900 
+Connection ~ 10100 900 
+Wire Wire Line
+	11100 900  11200 900 
+Wire Wire Line
+	11300 900  11200 900 
+Connection ~ 11200 900 
+Wire Wire Line
+	11200 900  11200 1000
+Wire Wire Line
+	11200 1000 10600 1000
+Wire Wire Line
+	10100 1000 10100 900 
+Wire Wire Line
+	10600 1100 10600 1000
+Connection ~ 10600 1000
+Wire Wire Line
+	10600 1000 10100 1000
 $EndSCHEMATC
