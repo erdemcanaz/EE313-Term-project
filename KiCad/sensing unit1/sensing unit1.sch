@@ -184,7 +184,7 @@ L Device:R R6
 U 1 1 61E619D3
 P 4150 3850
 F 0 "R6" V 3943 3850 50  0000 C CNN
-F 1 "25k" V 4034 3850 50  0000 C CNN
+F 1 "56k" V 4034 3850 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4080 3850 50  0001 C CNN
 F 3 "~" H 4150 3850 50  0001 C CNN
 	1    4150 3850
@@ -225,7 +225,7 @@ L Device:R R5
 U 1 1 61E653B0
 P 3900 2650
 F 0 "R5" H 3970 2696 50  0000 L CNN
-F 1 "25k" H 3970 2605 50  0000 L CNN
+F 1 "56k" H 3970 2605 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3830 2650 50  0001 C CNN
 F 3 "~" H 3900 2650 50  0001 C CNN
 	1    3900 2650
@@ -273,17 +273,6 @@ F 3 "~" H 5750 3250 50  0001 C CNN
 	1    5750 3250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:D_Zener D5
-U 1 1 61E731BF
-P 6250 3550
-F 0 "D5" V 6204 3630 50  0000 L CNN
-F 1 "4.7V" V 6295 3630 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P12.70mm_Horizontal" H 6250 3550 50  0001 C CNN
-F 3 "~" H 6250 3550 50  0001 C CNN
-	1    6250 3550
-	0    1    1    0   
-$EndComp
 Text GLabel 6250 3850 3    50   Input ~ 0
 GND
 Wire Wire Line
@@ -296,7 +285,7 @@ Wire Wire Line
 	5900 3250 6250 3250
 Connection ~ 6250 3250
 Wire Wire Line
-	6250 3250 7100 3250
+	6250 3250 6600 3250
 Wire Wire Line
 	6950 3450 7100 3450
 Wire Wire Line
@@ -429,7 +418,7 @@ L Device:R R10
 U 1 1 61EB92CF
 P 8100 5250
 F 0 "R10" H 8170 5296 50  0000 L CNN
-F 1 "500" H 8170 5205 50  0000 L CNN
+F 1 "0" H 8170 5205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8030 5250 50  0001 C CNN
 F 3 "~" H 8100 5250 50  0001 C CNN
 	1    8100 5250
@@ -448,7 +437,7 @@ L Device:R R11
 U 1 1 61EC3A9F
 P 8100 5600
 F 0 "R11" H 8170 5646 50  0000 L CNN
-F 1 "330" H 8170 5555 50  0000 L CNN
+F 1 "560" H 8170 5555 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8030 5600 50  0001 C CNN
 F 3 "~" H 8100 5600 50  0001 C CNN
 	1    8100 5600
@@ -640,7 +629,7 @@ Wire Notes Line
 Wire Notes Line
 	6800 2700 7850 2700
 Text Notes 8750 3550 0    50   ~ 0
-Vout = 25*(LM35 voltage- OFFSET VOLTAGE) - Vdiode_on\n0<Vout<4.7V\nOFFSET_VOLTAGE = Voltage of LM35 at 24C + Viode_on/25.\n\nVout (C) = 0.25*(C-24), \nat 24C, Vout = 0V & at 40C, vout = 4V
+Vout =56*(LM35 voltage- OFFSET VOLTAGE) - Vdiode_on\n0<Vout<8.8V\nOFFSET_VOLTAGE = Voltage of LM35 at 24C + Viode_on/25.\n\nVout (C) = 0.56*(C-24), \nat 24C, Vout = 0V & at 40C, vout = 9V
 Wire Notes Line
 	11050 3050 11050 3600
 Wire Notes Line
@@ -8859,4 +8848,35 @@ CF DB C7 F4 60 C6 18 63 8C 31 C6 18 63 AC E5 D8 3B 00 0B 21 82 20 00 A0 2D 82 20
 BE 1F 45 D1 FF 07 34 D7 B6 8E DD A0 35 20 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Device:D_Zener D5
+U 1 1 61E731BF
+P 6250 3550
+F 0 "D5" V 6204 3630 50  0000 L CNN
+F 1 "4.7V" V 6295 3630 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P12.70mm_Horizontal" H 6250 3550 50  0001 C CNN
+F 3 "~" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E78901
+P 6600 3550
+F 0 "R?" V 6807 3550 50  0000 C CNN
+F 1 "500k" V 6716 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6530 3550 50  0001 C CNN
+F 3 "~" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 3850 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6600 3850 6600 3700
+Wire Wire Line
+	6600 3400 6600 3250
+Connection ~ 6600 3250
+Wire Wire Line
+	6600 3250 7100 3250
 $EndSCHEMATC
