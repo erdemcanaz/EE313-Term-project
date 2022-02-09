@@ -779,34 +779,26 @@ SCHMIDTH TRIGGER OFFSET
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 6209D2C4
-P 4550 3100
-F 0 "J1" V 4488 2912 50  0000 R CNN
-F 1 "Conn_01x02_Female" V 4397 2912 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 4550 3100 50  0001 C CNN
-F 3 "~" H 4550 3100 50  0001 C CNN
-	1    4550 3100
+P 3850 3100
+F 0 "J1" V 3788 2912 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 3697 2912 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 3850 3100 50  0001 C CNN
+F 3 "~" H 3850 3100 50  0001 C CNN
+	1    3850 3100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 3300 4550 3400
+	3850 3300 3850 3400
 Wire Wire Line
-	4650 3400 4650 3300
-Text GLabel 4550 3400 3    50   Input ~ 0
+	3950 3400 3950 3300
+Text GLabel 3850 3400 3    50   Input ~ 0
 HEATER
-Text GLabel 4650 3400 3    50   Input ~ 0
+Text GLabel 3950 3400 3    50   Input ~ 0
 FAN
 Text Notes 5200 5350 1    50   ~ 0
 INDICATES FAN IS WORKING
 Text Notes 5150 2100 1    50   ~ 0
 INDICATES HEATER IS WORKING
-Wire Notes Line
-	5600 2800 5600 3850
-Wire Notes Line
-	5600 3850 3550 3850
-Wire Notes Line
-	3550 3850 3550 2800
-Wire Notes Line
-	3550 2800 5600 2800
 Text Notes 3600 2950 0    118  ~ 0
 OUTPUT
 $Bitmap
@@ -7553,4 +7545,14 @@ Wire Wire Line
 	8950 2100 8950 2450
 Wire Wire Line
 	9050 2100 9050 2450
+Text Notes 5800 3950 0    50   ~ 0
+UPPER 8V, LOWER 2V schmidth trigger\n
+Wire Notes Line
+	3550 3850 4950 3850
+Wire Notes Line
+	4950 3850 4950 2750
+Wire Notes Line
+	4950 2750 3550 2750
+Wire Notes Line
+	3550 2750 3550 3850
 $EndSCHEMATC
