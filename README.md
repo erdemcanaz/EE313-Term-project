@@ -1,4 +1,2 @@
-# EE313 Term project
- 
-test1
-test2
+# EE313-Term Project
+## _Implementing An Analog Approach For Closed Environment Autonomous Temperature Control Circuitry_
