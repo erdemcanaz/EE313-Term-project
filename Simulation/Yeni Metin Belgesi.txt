@@ -1,0 +1,2 @@
+This folder contains LT spice simulation of the different circuit ideas for
+control unit, display unit, sensing unit, and set unit. 
