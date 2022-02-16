@@ -16,7 +16,7 @@
 <p align="center" width="100%">   
    <img width="60%" src="/Pictures/readme/sensing_unit_diagram.png"  >  
 </p>
-
+ 
 <p> Sensing unit output voltage (Vsensing) is 0V and 9V voltage for the 24◦C and 40◦C temperatures, respectively. Between these temperature levels, it has a linear increase in the output voltage. Outside of this temperature range, it performs clipping in the voltage levels. The temperature sensor used (LM35) has lienar characteristics and outputs 240mV and 400mv for 24◦C and 40◦C temperatures respectively. By subtracting 240mV and multiplying the result with 56 (160 mV x 56=8.96V), we can get desired output characteristics. Yet another problem to solve is to constrain this voltage in between 0-9Volts. Which can be done by a diode an a 9.1V zenner diode.
    <ol>
    <li><b> Voltage Reference Stage:</b> At this stage, about 240mV+(0.7)/56 is generated. 240mV is due to LM35 and (0.7)/56 is due to forward voltage drop of diode D1. Even though R3 & R4 is >> R1,R2 % R_POT; this voltage reference is not isolated. Also forward votlage drop of the diode may not be exactly 0.7Volts. Thus, a potentiometer is used to find exact point where output is 0 volt at 24C and starts to increase just after that. Then, potentiometer is replaced by resistors. </li>
