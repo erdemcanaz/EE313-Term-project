@@ -13,6 +13,9 @@
 
 <h3 align="center" style="font-style: italic;font-size:2em;"> Sensing Unit </h3>
 
+<p align="center" width="100%">   
+   <img width="80%" src="/Pictures/readme/sensing_unit_diagram.png"  >  
+</p>
 
 
 
