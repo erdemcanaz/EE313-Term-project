@@ -1,9 +1,19 @@
-# EE313-Term Project
-## _Implementing An Analog Approach For Closed Environment Autonomous Temperature Control Circuitry_
 
-<!--<img src="/Pictures/readme/youtubeicon.png" style=" width: 25px;
-  height: 25px;vertical-align:middle;margin:-40px 0px; object-fit:cover;"> </center>   -->
-<!--![yastik](/Pictures/readme/youtubeicon.png)-->
+
 <p align="center">
-   <img src="/Pictures/readme/youtubeicon.png" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementing An Analog Approach For Closed Environment Autonomous Temperature Control Circuitry.
 </p>
+
+<h1 align="center" style=" border-bottom: none ;">Implementing An Analog Approach For Closed Environment Autonomous Temperature Control Circuitry </h1>
+<h3 align="center" style="font-style: italic;font-size:2em;">  EE-313 TERM PROJECT </h3>
+
+
+
+   
+  
+[<img alt="alt_text" width="40px" src="/Pictures/readme/end.png" />](https://www.google.com/)
+
+<p align="center" width="100%">
+   <img width="33%" src="/Pictures/readme/end.png" >  
+</p>
+
