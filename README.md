@@ -24,7 +24,7 @@
    <li><b> Clipping Stage:</b> This stage rectifies the output of the subtraction stage due to <b>D1</b>. And if voltage of the previous stage is greater than <b>V_Z2</b>, <b> Z2</b> is activated and voltage upper limit is set.</li>
    <li><b> Buffering Stage:</b> This stage buffers the output.</li>
    </ol> 
-   Experimentally measured input output characteristics and stability of the reference stage due to unstable buss voltage is given below.   
+   Experimentally measured input output characteristics and stability of the reference stage due to unstable buss voltage are given below.   
 </p> 
 
 <p align="center" width="100%">   
@@ -34,14 +34,21 @@
    <img width="50%" src="/Pictures/readme/sensing unit characteristic.png"  >  
 </p>
 
-
-
+<h3 align="center" style="font-style: italic;font-size:2em;"> Set Unit </h3>
+Desired temperature is set by adjusting the the potentiometer's knob. The schematic is self explanatory. <b> R1, R2 and R_POT</b> ensures voltage of the second leg of the potentiometer is greater than 0.25V and less than 8.75V. 
+<p align="center" width="100%">   
+   <img width="50%" src="/Pictures/readme/Vset.png"  >  
+</p>
 <b> </b>
 
+<h3 align="center" style="font-style: italic;font-size:2em;"> Control Unit </h3>
 
-
-
-
+<p align="center" width="100%">   
+   <img width="50%" src="/Pictures/readme/schmit.png"  >  
+</p>
+<p align="center" width="100%">   
+   <img width="50%" src="/Pictures/readme/simulation schmit.png"  >  
+</p>
 
 
 
