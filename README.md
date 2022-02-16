@@ -50,10 +50,16 @@ Desired temperature is set by adjusting the the potentiometer's knob. The schema
    <img width="50%" src="/Pictures/readme/simulation schmit.png"  >  
 </p>
 
-
+<h3 align="center" style="font-style: italic;font-size:2em;"> Operation Unit: Heating and Cooling </h3>
+<h3 align="center" style="font-style: italic;font-size:2em;"> Display Unit </h3>
 
 
 <p align="center" width="100%">   
-   <img width="33%" src="/Pictures/readme/end.png"  >  
+   <img width="45%" src="/Pictures/readme/end.png"  >  
 </p>
+
+<p align="center" width="100%">   
+   <b>Semanur Avşar</b> (Left) & <b>Erdem Canaz</b>  (right) <br>   https://youtu.be/WysXOD-1qQ8
+</p>
+
 
