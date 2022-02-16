@@ -5,5 +5,5 @@
   height: 150px;vertical-align:middle;margin:-40px 0px; object-fit:cover;"> </center>   -->
 <!--![yastik](top.png)-->
 <p align="center">
-   <img src="//Pictures/readme/youtubeicon.png" >
+   <img src="/Pictures/readme/youtubeicon.png" >
 </p>
