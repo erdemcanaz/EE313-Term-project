@@ -53,6 +53,7 @@ Desired temperature is set by adjusting the the potentiometer's knob. The schema
 <h3 align="center" style="font-style: italic;font-size:2em;"> Operation Unit: Heating and Cooling </h3>
 <h3 align="center" style="font-style: italic;font-size:2em;"> Display Unit </h3>
 
+<h1 align="center" style=" border-bottom: none ;">THANKS! </h1>
 
 <p align="center" width="100%">   
    <img width="45%" src="/Pictures/readme/end.png"  >  
